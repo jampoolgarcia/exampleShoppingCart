@@ -1,4 +1,8 @@
 <br>
+<!-- usando ngIf para mostrar el button de notify Me 
+    solo cuando el precio del producto es mayor a 700. -->
 <div *ngIf="product.price > 700">
+    <!-- usando event biding para emitir un evento del tipo output 
+        y ejecutar una función en otro componente. -->
     <button (click)="notify.emit()">Notify Me</button>
 </div>

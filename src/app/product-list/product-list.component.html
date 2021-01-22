@@ -1,18 +1,24 @@
 <h2>Products</h2>
 
+<!-- usando el ngFor en el arreglo de productos. -->
 <div *ngFor="let product of products">
+
+    <!-- usando property Biding para mostrar una descripción. -->
     <h3>
         <a [title]="product.name + ' details'">{{ product.name }}</a>
     </h3>
 
+    <!-- usando ngIf para mostrar la descripción solo cuando la tiene el producto. -->
     <p *ngIf="product.description">
         Description: {{ product.description }}
     </p>
 
+    <!-- usando event biding para ejecutar el método share() cuando se de click al button. -->
     <button (click)="share()">
         Shared
     </button>
 
+    <!-- Usando la comunicación entre componentes con input y output. -->
     <br>
     <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
     <br>
