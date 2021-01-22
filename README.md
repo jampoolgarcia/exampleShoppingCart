@@ -1,3 +1,12 @@
+
+# Start project
+
+Run `npm install`
+
+and 
+
+Run `ng serve`
+
 # Main
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
