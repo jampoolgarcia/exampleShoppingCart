@@ -1,0 +1,9 @@
+<h3>Card Items</h3>
+
+<!-- <!-- enlace que dirige a el componente shipping -->-->
+<a routerLink="/shipping">Shipping Prices</a>
+
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+</div>
